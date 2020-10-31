@@ -34,7 +34,7 @@ app.use(function validateBearerToken(req, res, next) {
 
     if (req.query.coutry) {
         response = response.filter(movie =>
-            movie.country.toLowerCase().includes(req.query.genre)   
+            movie.country.toLowerCase().includes(req.query.country)   
         )
     }
 
